@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <body>
+            <h1> Contact Sheet</h1>
+            <h2> Please enjoy the video and fill out the form below</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zSef1xalcqM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            &nbsp;&nbsp;
+            
+            <div class= "feedback">
+                <form action="mailto:doryan@usca.edu" method = "post" enctype="text/plain">
+                    <label for="fn">First Name</label>
+                    <input type="text" id="fn" name="fname" placeholder="anonymous" required>
+                    <br>
+                    <label for="ln">Last Name</label>
+                    <input type="text" id="ln" name="lname" placeholder="anonymous" required>
+                    <br>
+                    <label for = "email">Email</label>
+                    <input type="text" id="em" name="mail" placeholder="name@domain.com" required>
+                    <br>
+
+                    <p><b>Would You Recommend This Website?</b></p>
+                    <input type="radio" id="answer1" name="yes">
+                    <label for="age1">Yes</label><br>
+                    <input type="radio" id="answer2" name="no">
+                    <label for="age2">No</label>
+                    <br>
+
+                    <p><b>What Would You Rate This Website?</b></p>
+                    <input type="range" id="rate" name="rating" min="0" max="10">
+                    <label for="rating">Move The Cursor To Rate This Website</label>
+                    <br>
+
+                    <p><b>What Is Your Favorite Social Media</b></p>
+                    <label for="rate">Choose From The List Below:</label>
+                    <select name="favorite website" id="rating">
+                    <option value="facebook">Facebook</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="tiktok">Tik Tok</option>
+                    <option value="reddit">Reddit</option>
+                </select>
+                <br>
+                &nbsp;&nbsp; 
+                <br>
+                <label for="comment"><b>Please Insert Additional Comments Here<b></label>
+                <br>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px" rows="4" cols="100" ></textarea>
+                <br>
+                <input type ="submit">
+                </form>
+                
+            </div>
+        </body>
+    </head>
+</html>
