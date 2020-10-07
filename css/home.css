@@ -1,21 +1,20 @@
-
-#items{
+#items {
     width: 20px;
     height: 20px;
 }
 
-
-.info{
+.info {
     display: none;
 }
 
-
 #items:hover .info {
-     display: block;  
-}body {
+    display: block;
+}
+
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
 div.fixed {
     position: fixed;
@@ -26,23 +25,28 @@ div.fixed {
 }
 
 div.navbar {
-   background-color : #000000 ; 
-   overflow : hidden ; 
-   text-align: center; 
+    background-color: #000000;
+    overflow: hidden;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
 }
 
 div.navbar a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 div.navbar a:hover {
-    background-color : #dddddd ; 
-    color : black ; 
+    background-color: #dddddd;
+    color: black;
 }
 
 div.navbar a.active {
@@ -50,32 +54,45 @@ div.navbar a.active {
     color: white;
 }
 
-h1.introduction {
-    background-color: #7c56c3 ;
+div.introduction {
+    background-color: #6d85e3;
     width: 100%;
 }
-p.introduction {
-    background-color: #7c56c3;
-    width: 50% ; 
+
+div.video {
+    background-color: #9297a8;
 }
+
+div.button {
+    background-color: #6d85e3;
+}
+
 div.Assignment {
-
+    background-color: #9297a8;
 }
+
 div.Portfolio {
-
+    background-color: #6d85e3;
 }
 
-div.Contact { 
-
+div.Contact {
+    background-color: #9297a8;
 }
-
 
 div.Schedule {
-
+    background-color: #6d85e3;
 }
 
 .header {
-  background-color: #F1F1F1;
-  text-align: center;
-  padding: 10px;
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    background-color: #FFF;
+    position: absolute;
+    bottom: 100px;
+    width: 400px;
+    text-align: center;
 }
