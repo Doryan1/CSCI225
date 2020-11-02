@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>
+            <div class="row align-items-center" id="title"><h1>Unit Conversion Calculator - Length </h1></div>
+        </h1>
+    </div>
+    <div>
+        <form>
+            <br>
+            <br>
+
+            <input type="text" placeholder="0" id="input">
+            <select name="unitI" id="unitI">
+                <option value="Feet">Feet</option>
+                <option value="Inches">Inches</option>
+                <option value="Yards">Yards</option>
+                <option value="Meters">Meters</option>
+                <option value="Centimeters">Centimeters</option>
+                <option value="Kilometers">Kilometers</option>
+            </select>
+            <input type="text" placeholder="0" id="output">
+            <select name="unitO" id="unitO">
+                <option value="Feet">Feet</option>
+                <option value="Inches">Inches</option>
+                <option value="Yards">Yards</option>
+                <option value="Meters">Meters</option>
+                <option value="Centimeters">Centimeters</option>
+                <option value="Kilometers">Kilometers</option>
+            </select>
+            <button type="button" value="Convert" id="convert">Click This Button To Convert</button>
+            <br>
+        </form>
+    </div>
+
+    <script>
+        function LengthConversion() {
+            var one = document.getElementById('one').value ;
+            var two = document.getElementById('two').value ; 
+            var three = parseFloat(document.getElementById('input').value) ; 
+            document.getElementById('convert').addEventListener('event', LengthConversion, false);
+            
+            if(isNaN(three)|| three < 0) {
+                window.alert("Enter a number above 0 please") ; 
+            }
+            
+            else {
+                var factor = 0 ; 
+                if (one == "Feet") {
+                    switch(two) {
+                        case "Inches" :
+                            var factor = 12 ;
+                            break ; 
+                        case "Yards":
+                            var factor = 0.333 ; 
+                            break ;
+                        case "Feet" :
+                            var factor = 1 ;
+                            break ; 
+                        case "Meters" : 
+                            var factor = 0.3048 ;
+                            break ; 
+                        case "Centimeters" :
+                            var factor = 30.48 ; 
+                            break ; 
+                        case "Kilometers" :
+                            var factor = 0.0003048 ;
+                            break ; 
+
+                    }
+                }
+                else if (one == "Inches") {
+                    switch(two) {
+                        case "Inches" :
+                            var factor = 1 ;
+                            break ; 
+                        case "Yards":
+                            var factor = 0.0277778 ; 
+                            break ;
+                        case "Feet" :
+                            var factor = 0.0833333 ;
+                            break ; 
+                        case "Meters" : 
+                            var factor = 0.0254 ;
+                            break ; 
+                        case "Centimeters" :
+                            var factor = 2.54 ; 
+                            break ; 
+                        case "Kilometers" :
+                            var factor = 0.0000254 ;
+                            break ; 
+
+                }
+            }
+                else if (one == "Yards") {
+                    switch(two) {
+                        case "Inches" :
+                            var factor = 36 ;
+                            break ; 
+                        case "Yards":
+                            var factor = 1 ; 
+                            break ;
+                        case "Feet" :
+                            var factor = 3 ;
+                            break ; 
+                        case "Meters" : 
+                            var factor = 0.9144 ;
+                            break ; 
+                        case "Centimeters" :
+                            var factor = 91.44 ; 
+                            break ; 
+                        case "Kilometers" :
+                            var factor = 0.0009144 ; 
+                            break ; 
+                }
+            }
+                else if (one == "Meters") {
+                    switch(two) {
+                        case "Inches" :
+                            var factor = 39.3701 ;
+                            break ; 
+                        case "Yards":
+                            var factor = 1.09361 ; 
+                            break ;
+                        case "Feet" :
+                            var factor = 3.28084 ;
+                            break ; 
+                        case "Meters" : 
+                            var factor = 1 ;
+                            break ; 
+                        case "Centimeters" :
+                            var factor = 100 ; 
+                            break ; 
+                        case "Kilometers" :
+                            var factor = 0.001 ; 
+                            break ; 
+                    }
+                }
+                else if (one == "Centimeters") {
+                    switch(two) {
+                        case "Inches" :
+                            var factor = 0.393701 ;
+                            break ; 
+                        case "Yards":
+                            var factor = 0.0109361 ; 
+                            break ;
+                        case "Feet" :
+                            var factor = 0.0328084 ;
+                            break ; 
+                        case "Meters" : 
+                            var factor = 0.01 ;
+                            break ; 
+                        case "Centimeters" :
+                            var factor = 1 ; 
+                            break ; 
+                        case "Kilometers" :
+                            var factor = .000001;
+                            break ; 
+                    }
+                }
+                else if (one == "Kilometers") {
+                    switch(two) {
+                        case "Inches" :
+                            var factor = 39370.1 ;
+                            break ; 
+                        case "Yards":
+                            var factor = 1093.61 ; 
+                            break ;
+                        case "Feet" :
+                            var factor = 3280.84 ;
+                            break ; 
+                        case "Meters" : 
+                            var factor = 1000 ;
+                            break ; 
+                        case "Centimeters" :
+                            var factor = 100000 ; 
+                            break ; 
+                        case "Kilometers" :
+                            var factor = 1
+                            break ; 
+                    }
+                }
+                document.getElementById('output').value = (one * factor).toFixed(5) ; 
+            }
+        }
+
+    </script>
+
+</body>
