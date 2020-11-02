@@ -1,12 +1,8 @@
+
 iframe {border:10px solid #000;
     border-radius: 20px !important;
 }
 
-.wrap {
-    box-shadow: 4px 8px 7px #2b1ac585;
-    grid-column: 1/6;
-    grid-row: 1/6;
-}
 body {
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
@@ -14,9 +10,7 @@ body {
     grid-gap: 10px;
     grid-auto-rows: minmax(150px,auto);
     padding: 10%;
-    margin: 10 ; 
-    background-image: url("img\DSC01580.jpg");
-    background-color: #cccccc;
+    margin: 10 ;
 }
 .info {
     display: none;
