@@ -1,42 +1,101 @@
 <!DOCTYPE html>
-<html lang = "en" > 
-    <head>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, intial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="css/ContactMe.css">
         <title>
             Contact Me 
         </title>
         <body>
-            <h1> Contact Sheet</h1>
-            <h2> Please enjoy the video and fill out the form below</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/zSef1xalcqM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            &nbsp;&nbsp;
+            <!-- <h1> Contact Sheet</h1>
+            <h2> Please enjoy the video and fill out the form below</h2> -->
+
+            <div class="navbar">
+                <li>
+                    <a href="https://www.usca.edu" target="_blank" rel="noopener noreferrer"> USCA Website</a>
+                <li>
+                    <a href="HTMLelements.html"> Link to Assignment Section </a>
+                <li>
+                    <a href="index.html"> Link to Portfolio Section </a>
+                <li>
+                    <a href="https://www.google.com/search?q=pictures+of+tacos&rlz=1C1CHBF_enUS909US909&sxsrf=ALeKk03FFhTPsvuewdlmUXPRCE_Qg-jN5Q:1600199265346&source=lnms&tbm=isch&sa=X&ved=2ahUKEwin_Z7m9uvrAhVnk-AKHYbpDlEQ_AUoAXoECA0QAw&biw=958&bih=927" target="_blank" rel="noopener noreferrer">Taco Pictures</a>
+                <li>
+                    <a href="https://www.instagram.com/killryanx/" target="_blank" rel="noopener noreferrer">My Instagram</a>
+                </li>
+                <li>
+                    <a href="index.html">Home Page</a>
+                </li>
+            </div>
+        
+                <div class="contactvid">
+                    <p<b>This is the most recent video I shot while in Atlanta</b></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yS713HQpTxE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
 
             <div class= "feedback">
+                <p><b>Please Enter Your Information</b></p>
                 <form action="mailto:doryan@usca.edu" method = "post" enctype="text/plain">
+                    <div class = "form-group">
                     <label for="fn">First Name</label>
+                    </br>
                     <input type="text" id="fn" name="fname" placeholder="anonymous" required>
                     <br>
-                    <label for="ln">Last Name</label>
-                    <input type="text" id="ln" name="lname" placeholder="anonymous" required>
+                    </div>
+                    <div class = "form-group"></div>
+                    <small class="form-text text-muted">  Your password …..</small>
+                    <input type="password" id="ln" name="examplePass1" placeholder="Password" required>
+                    <br>
                     <br>
                     <label for = "email">Email</label>
+                    <br>
                     <input type="text" id="em" name="mail" placeholder="name@domain.com" required>
                     <br>
-
-                    <p><b>Would You Recommend This Website?</b></p>
-                    <input type="radio" id="answer1" name="yes">
-                    <label for="age1">Yes</label><br>
-                    <input type="radio" id="answer2" name="no">
-                    <label for="age2">No</label>
+                    </form>
+                </div>
+                    <div class ="recommend">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p><b>Would You Recommend This Website?</b></p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                              Yes
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                              No
+                            </label>
+                          </div>
                     <br>
-
-                    <p><strong>What Would You Rate This Website?</strong></p>
-                    <input type="range" id="rate" name="rating" min="0" max="10">
-                    <label for="rating">Move The Cursor To Rate This Website</label>
+                </div>
+                <div class ="rec">
                     <br>
-
-                    <p><strong>What Is Your Favorite Social Media</strong></p>
-                    <label for="rate">Choose From The List Below:</label>
-                    <select name="favorite website" id="rating">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <form>
+                            <div class="form-group">
+                              <label for="formControlRange"><b>What Would You Rate This Website?</b></label>
+                              <input type="range" class="form-control-range" id="formControlRange">
+                            </div>
+                          </form>
+                </div>
+                <div class ="social">
+                    <div class="form-group">
+                        <label for="social"><strong>What Is Your Favorite Social Media</strong></label>
+                    <label for="rate"><strong>Choose From The List Below:</strong></label>
+                    <select multiple class="form-control" id="social">
                     <option value="facebook">Facebook</option>
                     <option value="twitter">Twitter</option>
                     <option value="instagram">Instagram</option>
@@ -44,16 +103,25 @@
                     <option value="reddit">Reddit</option>
                 </select>
                 <br>
-                &nbsp;&nbsp; 
+            </div>
+        </div>
+                <div class ="addition">
                 <br>
                 <label for="comment"><b>Please Insert Additional Comments Here<b></label>
                 <br>
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px" rows="4" cols="100" ></textarea>
                 <br>
-                <input type ="submit">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <br>
+    <br>
+                <input type="submit" value="Submit review" class="btn btn-primary">
+                <form action="mailto:doryan@usca.edu" method = "post" enctype="text/plain">
                 </form>
-                
             </div>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         </body>
     </head>
 </html>
