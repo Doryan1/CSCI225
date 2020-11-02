@@ -1,0 +1,80 @@
+iframe {border:10px solid #000;
+    border-radius: 20px !important;
+}
+
+.wrap {
+    box-shadow: 4px 8px 7px #2b1ac585;
+    grid-column: 1/6;
+    grid-row: 1/6;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(150px,auto);
+    padding: 10%;
+    margin: 10 ; 
+    background-image: url("img\DSC01580.jpg");
+    background-color: #cccccc;
+}
+.info {
+    display: none;
+}
+#items:hover .info {
+    display: block;
+}
+title {
+    grid-column: 1/6;
+    grid-row: 1/6;
+}
+div.navbar {
+    background-color: #000000;
+    overflow: hidden;
+    grid-row: 2;
+    position: fixed;
+    top:0 ;
+    left:0 ; 
+    right:0 ; 
+    width: 100% ; 
+}
+div.navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+div.navbar a:hover {
+    background-color: #cc23dc;
+    color: black;
+}
+div.navbar a.active {
+    color: white;
+    background-color: #7c56c3;
+
+}
+div.contactvid{
+    grid-column: 1/6;
+    grid-row: 3/3;
+  }
+div.feedback {
+    grid-column: 3/6;
+    grid-row: 1/6;
+}
+div.recommend {
+    grid-column: 3/6;
+    grid-row: 2/6;
+}
+div.rec {
+    grid-column: 3/6;
+    grid-row: 3/6;
+}
+div.social {
+    grid-column: 3/6;
+    grid-row: 4/6;
+}
+div.addition {
+    grid-column: 3/6;
+    grid-row: 5/6;
+}
