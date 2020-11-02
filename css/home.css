@@ -9,7 +9,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
-    background-image: url("img/taco-wallpaper-new-let-s-taco-bout-food-vol-2-colangelo-amp-partners-combination-of-taco-wallpaper.png");
+    background-image: url("img\DSC01580.jpg");
 }
 
 .info {
